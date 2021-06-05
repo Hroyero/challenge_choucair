@@ -1,10 +1,11 @@
-package co.com.choucair.certification.utest.tasks;
+package co.com.choucair.certification.utest.interactions;
 
 import co.com.choucair.certification.utest.userinterface.UtestSignUpStepTwoPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.DoubleClick;
 
 public class SingUpStepTwo implements Task {
     private UtestSignUpStepTwoPage utestSignUpStep2Page;
@@ -16,6 +17,6 @@ public class SingUpStepTwo implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        actor.attemptsTo(Click.on(UtestSignUpStepTwoPage.BUTTON_NEXT_DEVICES));
+        actor.attemptsTo(DoubleClick.on(UtestSignUpStepTwoPage.BUTTON_NEXT_DEVICES));
     }
 }

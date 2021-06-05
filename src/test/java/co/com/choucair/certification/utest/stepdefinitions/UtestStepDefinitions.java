@@ -1,6 +1,9 @@
 package co.com.choucair.certification.utest.stepdefinitions;
 
 
+import co.com.choucair.certification.utest.interactions.JoinToday;
+import co.com.choucair.certification.utest.interactions.SingUpStepThree;
+import co.com.choucair.certification.utest.interactions.SingUpStepTwo;
 import co.com.choucair.certification.utest.model.UtestData;
 import co.com.choucair.certification.utest.questions.Answer;
 import co.com.choucair.certification.utest.tasks.*;

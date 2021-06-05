@@ -1,4 +1,4 @@
-package co.com.choucair.certification.utest.tasks;
+package co.com.choucair.certification.utest.interactions;
 
 
 import co.com.choucair.certification.utest.userinterface.UtestSignUpStepThreePage;
@@ -17,7 +17,13 @@ public class SingUpStepThree implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-
+        actor.attemptsTo(Click.on(UtestSignUpStepThreePage.INPUT_LIST_COMPUTER));
+        actor.attemptsTo(Click.on(UtestSignUpStepThreePage.SELECT_COMPUTER));
+        actor.attemptsTo(Click.on(UtestSignUpStepThreePage.INPUT_LIST_VERSION));
+        actor.attemptsTo(Click.on(UtestSignUpStepThreePage.SELECT_VERSION));
+        actor.attemptsTo(Click.on(UtestSignUpStepThreePage.INPUT_LIST_LANGUAGE));
+        actor.attemptsTo(Click.on(UtestSignUpStepThreePage.SELECT_LANGUAGE));
         actor.attemptsTo(Click.on(UtestSignUpStepThreePage.BUTTON_NEXT_LAST_STEP));
+
     }
 }
