@@ -3,6 +3,13 @@ package co.com.choucair.certification.utest.model;
 public class UtestData {
     private String strFirstName;
     private String strLastName;
+    private String strEmailAddress;
+    private String strMonth;
+    private String strDay;
+    private String strYear;
+    private String strPassword;
+    private String strConfirmPassword;
+    private String strCourstrRegistered;
 
     public String getStrFirstName() {
         return strFirstName;
@@ -76,11 +83,5 @@ public class UtestData {
         this.strCourstrRegistered = strCourstrRegistered;
     }
 
-    private String strEmailAddress;
-    private String strMonth;
-    private String strDay;
-    private String strYear;
-    private String strPassword;
-    private String strConfirmPassword;
-    private String strCourstrRegistered;
+
 }

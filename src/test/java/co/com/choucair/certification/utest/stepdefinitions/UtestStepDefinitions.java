@@ -29,7 +29,7 @@ public class UtestStepDefinitions {
 
     @When("^he search for the option to registe and fill the registration form$")
     public void heSearchForTheOptionToRegisteAndFillTheRegistrationForm(List<UtestData> utestData)throws Exception{
-        OnStage.theActorInTheSpotlight().attemptsTo(SignUp.onThePage(), SingUpStep2.onThePage(), SingUpStep3.onThePage(),SingUpStep4.onThePage());
+        OnStage.theActorInTheSpotlight().attemptsTo(SignUp.onThePage(utestData.get(0).getStrFirstName(),utestData.get(0).getStrLastName(),utestData.get(0).getStrEmailAddress(),utestData.get(0).getStrMonth(),utestData.get(0).getStrDay(),utestData.get(0).getStrYear()), SingUpStep2.onThePage(), SingUpStep3.onThePage(),SingUpStep4.onThePage());
     }
 
     @Then("^he registers on the page$")
