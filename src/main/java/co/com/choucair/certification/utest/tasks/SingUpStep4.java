@@ -11,16 +11,22 @@ import net.serenitybdd.screenplay.actions.Enter;
 
 
 public class SingUpStep4 implements Task {
-    private UtestSignUpStep4Page utestSignUpStep4Page;
+    private String strPassword;
+    private String strConfirmPassword;
 
-    public static SingUpStep4 onThePage() {
-        return Tasks.instrumented(SingUpStep4.class);
+    public SingUpStep4(String strPassword,String strConfirmPassword){
+        this.strPassword = strPassword;
+        this.strConfirmPassword = strConfirmPassword;
+    }
+
+    public static SingUpStep4 onThePage(String strPassword,String strConfirmPassword) {
+        return Tasks.instrumented(SingUpStep4.class,strPassword,strConfirmPassword);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue("0btCnxzxXt&8").into(UtestSignUpStep4Page.INPUT_PASSWORD));
-        actor.attemptsTo(Enter.theValue("0btCnxzxXt&8").into(UtestSignUpStep4Page.INPUT_CONFIRM_PASSWORD));
+        actor.attemptsTo(Enter.theValue(strPassword).into(UtestSignUpStep4Page.INPUT_PASSWORD));
+        actor.attemptsTo(Enter.theValue(strConfirmPassword).into(UtestSignUpStep4Page.INPUT_CONFIRM_PASSWORD));
         actor.attemptsTo(Click.on(UtestSignUpStep4Page.CHECK_STAY_INFORME));
         actor.attemptsTo(Click.on(UtestSignUpStep4Page.CHECK_ACCEPT_THE_TERMS_OF_USE));
         actor.attemptsTo(Click.on(UtestSignUpStep4Page.CHECK_ACCEPT_THE_SECURITY_POLICIES));
