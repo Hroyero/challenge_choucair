@@ -3,7 +3,7 @@ package co.com.choucair.certification.utest.userinterface;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class UtestSignUpStep4Page {
+public class UtestSignUpStepFourPage {
 
     public static final Target INPUT_PASSWORD = Target.the("Where we write the first name").located(By.cssSelector("#password"));
     public static final Target INPUT_CONFIRM_PASSWORD = Target.the("Where we write the first name").located(By.cssSelector("#confirmPassword"));

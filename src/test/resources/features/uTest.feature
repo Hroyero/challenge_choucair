@@ -15,4 +15,4 @@
 
     Examples:
       | strFirstName   | strLastName | strEmailAddress      |  strMonth   | strDay    | strYear     | strPassword   | strConfirmPassword   | strRegistered                                                          |
-      | Hollmans       | Royero      | jilticardi@biyac.com |  number:7   | number:22 | number:1996 | 0btCnxzxXt&8  | 0btCnxzxXt&8         | Welcome to the world's largest community of freelance software testers!|
+      | Hollmans       | Royero      | motrorerza@biyac.com |  number:7   | number:22 | number:1996 | 0btCnxzxXt&8  | 0btCnxzxXt&8         | Welcome to the world's largest community of freelance software testers!|
