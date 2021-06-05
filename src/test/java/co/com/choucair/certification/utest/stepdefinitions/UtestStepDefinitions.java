@@ -33,8 +33,8 @@ public class UtestStepDefinitions {
     }
 
     @Then("^he registers on the page$")
-    public void heRegistersOnThePage(String question) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
+    public void heRegistersOnThePage(List<UtestData> utestData)throws Exception{
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(utestData.get(0).getStrRegistered())));
     }
 
 

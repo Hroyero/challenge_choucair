@@ -9,7 +9,7 @@ public class UtestData {
     private String strYear;
     private String strPassword;
     private String strConfirmPassword;
-    private String strCourstrRegistered;
+    private String strRegistered;
 
     public String getStrFirstName() {
         return strFirstName;
@@ -75,12 +75,12 @@ public class UtestData {
         this.strConfirmPassword = strConfirmPassword;
     }
 
-    public String getStrCourstrRegistered() {
-        return strCourstrRegistered;
+    public String getStrRegistered() {
+        return strRegistered;
     }
 
-    public void setStrCourstrRegistered(String strCourstrRegistered) {
-        this.strCourstrRegistered = strCourstrRegistered;
+    public void setStrRegistered(String strRegistered) {
+        this.strRegistered = strRegistered;
     }
 
 
