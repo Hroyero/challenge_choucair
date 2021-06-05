@@ -3,6 +3,7 @@ package co.com.choucair.certification.utest.tasks;
 
 import co.com.choucair.certification.utest.userinterface.UtestJoinTodayPage;
 import co.com.choucair.certification.utest.userinterface.UtestSignUpPage;
+import co.com.choucair.certification.utest.userinterface.UtestSignUpStepThreePage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -41,6 +42,8 @@ public class SignUp implements Task {
         actor.attemptsTo(SelectFromOptions.byValue(strMonth).from(UtestSignUpPage.DATE_OF_BIRTH_MONTH));
         actor.attemptsTo(SelectFromOptions.byValue(strDay).from(UtestSignUpPage.DATE_OF_BIRTH_DAY));
         actor.attemptsTo(SelectFromOptions.byValue(strYear).from(UtestSignUpPage.DATE_OF_BIRTH_YEAR));
+        actor.attemptsTo(Click.on(UtestSignUpPage.INPUT_LIST_LANGUAGE));
+        actor.attemptsTo(Click.on(UtestSignUpPage.SELECT_LANGUAGE));
         actor.attemptsTo(Click.on(UtestSignUpPage.BUTTON_NEXT_LOCATION));
     }
 }
