@@ -1,10 +1,8 @@
-package co.com.choucair.certification.utest.interactions;
+package co.com.choucair.certification.utest.userinterface;
 
-import co.com.choucair.certification.utest.userinterface.UtestSignUpStepTwoPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.DoubleClick;
 
 public class SingUpStepTwo implements Task {
