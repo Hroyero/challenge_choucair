@@ -2,8 +2,8 @@ package co.com.choucair.certification.utest.stepdefinitions;
 
 
 import co.com.choucair.certification.utest.interactions.JoinToday;
-import co.com.choucair.certification.utest.interactions.SingUpStepThree;
-import co.com.choucair.certification.utest.userinterface.SingUpStepTwo;
+import co.com.choucair.certification.utest.tasks.SignUpStepThree;
+import co.com.choucair.certification.utest.tasks.SignUpStepTwo;
 import co.com.choucair.certification.utest.model.UtestData;
 import co.com.choucair.certification.utest.questions.Answer;
 import co.com.choucair.certification.utest.tasks.*;
@@ -32,7 +32,7 @@ public class UtestStepDefinitions {
 
     @When("^he search for the option to registe and fill the registration form$")
     public void heSearchForTheOptionToRegisteAndFillTheRegistrationForm(List<UtestData> utestData)throws Exception{
-        OnStage.theActorInTheSpotlight().attemptsTo(SignUp.onThePage(utestData.get(0).getStrFirstName(),utestData.get(0).getStrLastName(),utestData.get(0).getStrEmailAddress(),utestData.get(0).getStrMonth(),utestData.get(0).getStrDay(),utestData.get(0).getStrYear()), SingUpStepTwo.onThePage(), SingUpStepThree.onThePage(), SingUpStepFour.onThePage(utestData.get(0).getStrPassword(),utestData.get(0).getStrConfirmPassword()));
+        OnStage.theActorInTheSpotlight().attemptsTo(SignUp.onThePage(utestData.get(0).getStrFirstName(),utestData.get(0).getStrLastName(),utestData.get(0).getStrEmailAddress(),utestData.get(0).getStrMonth(),utestData.get(0).getStrDay(),utestData.get(0).getStrYear()), SignUpStepTwo.onThePage(utestData.get(0).getStrCity(),utestData.get(0).getStrPostal()), SignUpStepThree.onThePage(), SignUpStepFour.onThePage(utestData.get(0).getStrPassword(),utestData.get(0).getStrConfirmPassword()));
     }
 
     @Then("^he registers on the page$")

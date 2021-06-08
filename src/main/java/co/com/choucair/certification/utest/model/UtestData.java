@@ -10,6 +10,26 @@ public class UtestData {
     private String strPassword;
     private String strConfirmPassword;
     private String strRegistered;
+    private String strCity;
+    private String strPostal;
+
+    public String getStrCity() {
+        return strCity;
+    }
+
+    public void setStrCity(String strCity) {
+        this.strCity = strCity;
+    }
+
+    public String getStrPostal() {
+        return strPostal;
+    }
+
+    public void setStrPostal(String strPostal) {
+        this.strPostal = strPostal;
+    }
+
+
 
     public String getStrFirstName() {
         return strFirstName;

@@ -15,4 +15,4 @@ Feature: uTest
 
     Examples:
       | strFirstName   | strLastName | strEmailAddress        |  strMonth   | strDay    | strYear     |  strCity | strPostal |   strPassword   | strConfirmPassword   | strRegistered                                                          |
-      | Hollmans       | Royero      | cidavin396@slowimo.com |  number:7   | number:22 | number:1996 |  Bogota  | 110931    |  0btCnxzxXt&8   | 0btCnxzxXt&8         | Welcome to the world's largest community of freelance software testers!|
+      | Hollmans       | Royero      | defote3197@pidhoes.com |  number:7   | number:22 | number:1996 |  Bogota  | 110931    |  0btCnxzxXt&8   | 0btCnxzxXt&8         | Welcome to the world's largest community of freelance software testers!|

@@ -1,4 +1,4 @@
-package co.com.choucair.certification.utest.interactions;
+package co.com.choucair.certification.utest.tasks;
 
 
 import co.com.choucair.certification.utest.userinterface.UtestSignUpStepThreePage;
@@ -8,11 +8,11 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
 
-public class SingUpStepThree implements Task {
+public class SignUpStepThree implements Task {
     private UtestSignUpStepThreePage utestSignUpStep3Page;
 
-    public static SingUpStepThree onThePage() {
-        return Tasks.instrumented(SingUpStepThree.class);
+    public static SignUpStepThree onThePage() {
+        return Tasks.instrumented(SignUpStepThree.class);
     }
 
     @Override

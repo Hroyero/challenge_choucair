@@ -8,17 +8,17 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
 
-public class SingUpStepFour implements Task {
+public class SignUpStepFour implements Task {
     private String strPassword;
     private String strConfirmPassword;
 
-    public SingUpStepFour(String strPassword, String strConfirmPassword){
+    public SignUpStepFour(String strPassword, String strConfirmPassword){
         this.strPassword = strPassword;
         this.strConfirmPassword = strConfirmPassword;
     }
 
-    public static SingUpStepFour onThePage(String strPassword, String strConfirmPassword) {
-        return Tasks.instrumented(SingUpStepFour.class,strPassword,strConfirmPassword);
+    public static SignUpStepFour onThePage(String strPassword, String strConfirmPassword) {
+        return Tasks.instrumented(SignUpStepFour.class,strPassword,strConfirmPassword);
     }
 
     @Override
